@@ -1,0 +1,8 @@
+{
+  "name": "Voice AI Receptionist",
+  "description": "Autonomous AI voice receptionist dashboard with Gemma intent analysis, Google Calendar appointment booking, TabPFN call prioritization, and virtual hardware controls.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
