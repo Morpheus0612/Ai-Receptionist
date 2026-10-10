@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#000000] text-[#f5f5f7] antialiased;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Apple-style smooth frosted glass */
+.apple-glass {
+  background: rgba(22, 22, 23, 0.75);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.apple-card {
+  background: #161617;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1.25rem;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-card:hover {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+/* Apple status LED glows */
+.led-blue {
+  box-shadow: 0 0 12px rgba(41, 151, 255, 0.8), 0 0 24px rgba(41, 151, 255, 0.3);
+}
+
+.led-green {
+  box-shadow: 0 0 12px rgba(52, 199, 89, 0.8), 0 0 24px rgba(52, 199, 89, 0.3);
+}
+
+.led-amber {
+  box-shadow: 0 0 12px rgba(255, 159, 10, 0.8), 0 0 24px rgba(255, 159, 10, 0.3);
+}
+
+.led-red {
+  box-shadow: 0 0 12px rgba(255, 69, 58, 0.8), 0 0 24px rgba(255, 69, 58, 0.3);
+}
+
+/* Custom scrollbars Apple-style */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
